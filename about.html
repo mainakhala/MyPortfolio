@@ -2,42 +2,41 @@
 <html lang="en">
 <head>
     <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>-Mai Nakhala Portfolio - About me</title>
     <link rel="stylesheet" type="text/css" href="css/css_Main.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC8QS0QRSD"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
-
-    <!--  JQuery UI CSS -->
-    <!--<link href="_css/jquery-ui.min.css" rel="stylesheet">
-    <script src ="_js/jquery-ui.min.js" > </script>
-    <script src="_js/jquery.validate.min.js"></script>-->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    gtag('config', 'G-MC8QS0QRSD');
+    </script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>  
     <header>
-
         <div class ="navLogo">
-             <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"/></a>
-        </div>
-        
-        <!-- navigation -->
-        <nav>
-            <ul id="navUl">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                        
-                <li><a href="#foo">Hobbies</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul> 
-        </nav>
-        
-        
-        <div class="ham">
-            <input type="checkbox" id="btnNav" />
-            <label class="iconNav" for="btnNav"><span></span></label>
-        </div>
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"/></a>
+       </div>
+       
+       <!-- navigation -->
+       <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="projects.html">Projects</a>
+                    
+            <a href="hobbies.html">Hobbies</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+    </div>
+       
+
     </header>
     <!-- end header -->
 
@@ -46,7 +45,7 @@
     <div class="wrapper">
         <div class="title-L">
             <div class="circle">
-                <h2>About us</h2>
+                <h2>About</h2>
             </div>
         </div> 
 
@@ -72,8 +71,8 @@
         </div>
    </div>
 
-   <div class ="hero">
-        <img src="images/about-1.jpg" >   
+   <div class ="hero-parallax">
+        <!-- <img src="images/about-1.jpg" >    -->
     </div>
 
 

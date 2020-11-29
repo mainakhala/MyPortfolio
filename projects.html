@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mai Nakhala Portfolio - Projects</title>
     <link rel="stylesheet" type="text/css" href="css/css_Main.css">
     <!--<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC8QS0QRSD"></script>
 
-    <!--  JQuery UI CSS -->
-    <!-- <link href="_css/jquery-ui.min.css" rel="stylesheet"> -->
-    <script src ="js/jquery-ui.min.js" > </script>
-    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    gtag('config', 'G-MC8QS0QRSD');
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>  
@@ -21,77 +26,77 @@
        </div>
        
        <!-- navigation -->
-       <nav>
-           <ul id="navUl">
-               <li><a href="about.html">About</a></li>
-               <li><a href="projects.html">Projects</a></li>
-                       
-               <li><a href="#foo">Hobbies</a></li>
-               <li><a href="gallery.html">Gallery</a></li>
-               <li><a href="contact.html">Contact</a></li>
-           </ul> 
-       </nav>
+       <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+                    
+            <a href="hobbies.html">Hobbies</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+    </div>
     </header>
     <!-- end header -->
 
      <!-- Hero img -->
-    <!-- <div class ="hero">
-        <img src="_images/home-quote-2.jpg" >
-        <div class="heroTxt">
-            <h1></h1>
-            <h2></h2>
-        </div>    
-    </div> -->
+    <div class ="hero">
+        <img src="images/projects.jpg" >   
+    </div>
     <!-- End hero -->
 <main id="proj-main">
+    
+    
+    
     <div class="proj-col-1">
-
-        <div class="proj-div">
-            <div class ="proj-img">
-                <img src="images/mymentor.png" alt="MyMentor Logo">
-            </div>
-            
-            <div class = "proj-info">
-                <a href="#foo">
-                <h4>MyMentor App</h4>
-                </a> 
-            </div>
-            
-        </div>
-
-        <div class="proj-div">
-            <div class ="proj-img">
-                <img src="images/CivicEngagement.jpg" alt="Sticky notes">
-            </div>
-            <div class = "proj-info">
-                <a href="#foo">
-                <h4>Civic Engagement</h4>
-                <h5>UX Research</h5>
-                </a>
+    
+        <div class=flip3>
+            <div class="inner-box">
+                <div class="box-front">
+                    <img src="images/mymentor.png">
+                </div>
+                <div class="box-back">
+                    <h2>UX Research and Design</h2>
+                    <h2>My Mentor App</h2>
+                </div>
             </div>
         </div>
 
-        <div class="proj-div">
-                <div class ="proj-img">
+        <div class=flip3>
+            <div class="inner-box">
+                <div class="box-front">
+                    <img src="images/CivicEngagement.jpg" alt="Sticky notes">
+                </div>
+                <div class="box-back">
+                    <h2>Civic Engagement</h2>
+                    <h2>UX Research</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class=flip3>
+            <div class="inner-box">
+                <div class="box-front">
                     <img src="images/genivity.png" alt="Genivity Logo">
                 </div>
-                <div class = "proj-info">
-                    <a href="#foo">
-                    <h4>Usability Test</h4>
-                    <h5>Halo Assessment</h5>
-                    </a>
+                <div class="box-back">
+                    <h2>Usability Test</h2>
+                    <h2>Halo Assessment</h2>
                 </div>
             </div>
-    
-        <div class="proj-div">
-            <div class ="proj-img">
-                <img src="images/fitness.jpg" alt="Fitness Tracker image">
-            </div>
-            <div class = "proj-info">
-                <a href="#foo">
-                <h4>Role of Fitness Tracker</h4>
-                <h5>UX Research</h5>
-                </a>
+        </div>
+
+
+        <div class=flip3>
+            <div class="inner-box">
+                <div class="box-front">
+                    <img src="images/fitness.jpg" alt="Fitness Tracker image">
+                </div>
+                <div class="box-back">
+                    <h2>Role of Fitness Tracker</h2>
+                    <h2>UX Research</h2>
+                </div>
             </div>
         </div>
 
@@ -100,62 +105,60 @@
     
 
     <div class="proj-col-2">
-        <div class="proj-div">
-            <div class ="proj-img">
-                <img src="images/detroit.png" alt="City of Detroit Logo">
+
+        <div class=flip3>
+            <div class="inner-box">
+                <div class="box-front">
+                    <img src="images/detroit.png" alt="City of Detroit Logo">
+                </div>
+                <div class="box-back">
+                    <h2>Open Checkbook</h2>
+                    <h2>Usability Test</h2>
+                </div>
             </div>
-            <div class = "proj-info">
-                <a href="#foo">
-                <h4>Open CHeckbook</h4>
-                <h5>Usability Test</h5>
-                </a>
+        </div>
+
+        <div class=flip3>
+            <div class="inner-box">
+                <div class="box-front">
+                    <img src="images/virtualCamp.png" alt="Girl in front of computer">
+                </div>
+                <div class="box-back">
+                    <h2>Virtual Summer Camp</h2>
+                    <h2>Web Design & Development</h2>
+                </div>
             </div>
         </div>
     
-        <div class="proj-div">
-            <div class ="proj-img">
-                <img src="images/virtualCamp.png" alt="Girl in front of computer">
-            </div>
-            <div class = "proj-info">
-                <a href="#foo">
-                <h4>Virtual Summer Camp</h4>
-                <h5>Web Design & Development</h5>
-                </a>
-            </div>
-        </div>
-
-        <div class="proj-div">
-            <div class ="proj-img">
-                <img src="images/branding.png" alt="printed logo on cup">
-            </div>
-            <div class = "proj-info">
-                <a href="#foo">
-                <h4>Company Branding</h4>
-                <h5>Graphic Design</h5>
-                </a>
+        <div class=flip3>
+            <div class="inner-box">
+                <div class="box-front">
+                    <img src="images/branding.jpg" alt="printed logo on cup">
+                </div>
+                <div class="box-back">
+                    <h2>Company Branding</h2>
+                    <h2>Graphic Design</h2>
+                </div>
             </div>
         </div>
 
-        <div class="proj-div">
-            <div class ="proj-img">
-                <img src="images/Crafty-logo.gif" alt="Crafty emarket logo">
-            </div>
-            <div class = "proj-info">
-                <a href="#foo">
-                <h4>Crafty eMarket</h4>
-                <h5>Web Development</h5>
-                </a>
+        <div class=flip3>
+            <div class="inner-box">
+                <div class="box-front">
+                    <img src="images/Crafty-logo.gif" alt="Crafty emarket logo">
+                </div>
+                <div class="box-back">
+                    <h2>Crafty eMarket</h2>
+                    <h2>Web Development</h2>
+                </div>
             </div>
         </div>
-    </div> <!-- end team-col-2-->
-
-    
 </main>
     
 
     <footer>
         <div class ="footerB">
-            <p>@2019 Simon Group Holdings</p>
+            <p>@2020 Abstract Design</p>
         </div>
     </footer>
 

@@ -188,8 +188,7 @@ header {
   }
 
   .topnav a.active {
-    background-color: #43c0b9;
-    color: white;
+    border-bottom: 5px solid #43c0b9;
   }
 
   .topnav .icon {
